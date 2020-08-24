@@ -57,12 +57,12 @@ app.get("/notsupportedios", function (req, res) {
 });
 
 // Serve static files in the public directory
+app.use(express.static(public));
 app.use("/js", express.static(path.join(public, "js"), {
   setHeaders: function (res, path, stat) {
     res.set("Content-Type", "application/javascript")
   }
 }));
-app.use(express.static(public));
 
 // Simple logging function to add room name
 function logIt(msg, room) {
