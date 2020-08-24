@@ -57,7 +57,7 @@ app.get("/notsupportedios", function (req, res) {
 });
 
 // Serve static files in the public directory
-app.use(express.static("public/"));
+app.use(express.static(public));
 
 // Simple logging function to add room name
 function logIt(msg, room) {
