@@ -9,6 +9,5 @@
       "src": "/.*",
       "dest": "server.js"
     }
-  ],
-  "trailingSlash": false
+  ]
 }
